@@ -20,21 +20,24 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="98" id="4wl-k6-Gej" customClass="SearchTableViewCell" customModule="VK_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="98"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="95" id="4wl-k6-Gej" customClass="SearchTableViewCell" customModule="VK_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4wl-k6-Gej" id="6nM-xu-Xd5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-qH-Ejq">
-                                                    <rect key="frame" x="15" y="15" width="384" height="68"/>
+                                                    <rect key="frame" x="15" y="15" width="384" height="65"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-hB-M0h">
-                                                            <rect key="frame" x="0.0" y="0.0" width="181" height="68"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="181" height="65"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="UPq-vZ-ARf"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hrQ-SV-jAC">
-                                                            <rect key="frame" x="189" y="0.0" width="195" height="68"/>
+                                                            <rect key="frame" x="189" y="0.0" width="195" height="65"/>
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
@@ -42,6 +45,7 @@
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                                             <constraints>
                                                 <constraint firstItem="Upv-qH-Ejq" firstAttribute="leading" secondItem="6nM-xu-Xd5" secondAttribute="leading" constant="15" id="YQ2-7x-WkH"/>
                                                 <constraint firstItem="Upv-qH-Ejq" firstAttribute="top" secondItem="6nM-xu-Xd5" secondAttribute="top" constant="15" id="cvo-N2-E2h"/>
